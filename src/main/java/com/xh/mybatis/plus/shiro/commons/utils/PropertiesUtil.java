@@ -105,7 +105,7 @@ public final class PropertiesUtil extends PropertyPlaceholderConfigurer {
 	}
 
 	public static void main(String[] args) throws Exception {
-		String value = "jdbc:mysql://localhost:3306/spring_shiro?useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&transformedBitIsBoolean=true&useSSL=false";
+		String value = "admini";
 		String encrypt = SecurityUtil.encrypt(value, KEY);
 		System.out.println(encrypt);
 		System.out.println(SecurityUtil.decrypt(encrypt, KEY));

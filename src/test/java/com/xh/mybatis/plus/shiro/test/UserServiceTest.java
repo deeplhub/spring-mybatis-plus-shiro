@@ -14,8 +14,7 @@ import com.xh.mybatis.plus.shiro.model.User;
 import com.xh.mybatis.plus.shiro.service.IUserService;
 
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration(locations = { "classpath:spring/spring-config.xml", "classpath:spring/spring-mybatis.xml",
-		"classpath:spring/spring-shiro.xml" })
+@ContextConfiguration(locations = { "classpath:spring/spring-config.xml", "classpath:spring/spring-mybatis.xml", "classpath:spring/spring-shiro.xml" })
 public class UserServiceTest {
 
 	@Autowired

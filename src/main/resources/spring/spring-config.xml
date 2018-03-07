@@ -10,14 +10,14 @@
        http://www.springframework.org/schema/aop/spring-aop.xsd"
 	default-autowire="byName">
 
-	<bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+	<!-- <bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
 		<property name="locations">
 			<list>
 				 <value>classpath:config/*.properties</value>
 			</list>
 		</property>
-	</bean>
-	<!-- <bean class="com.mybatis.shiro.commons.utils.PropertiesUtil">
+	</bean> -->
+	<bean class="com.xh.mybatis.plus.shiro.commons.utils.PropertiesUtil">
 		<property name="locations">
 			<list>
 				 <value>classpath:config/*.properties</value>
@@ -25,13 +25,13 @@
 		</property>
 		<property name="decryptProperties">
 			<array>
-				需要解密的配置
+				<!-- 需要解密的配置 -->
 				<value>db.master.url</value>
 				<value>db.master.user</value>
 				<value>db.master.password</value>
 			</array>
 		</property>
-	</bean> -->
+	</bean>
 	
 	<!-- aspectj aop启用CGliB代理 -->
 	<aop:aspectj-autoproxy expose-proxy="true" proxy-target-class="true"/>
